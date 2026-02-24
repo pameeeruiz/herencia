@@ -9,12 +9,13 @@ namespace herencia
     internal class Program
     {
         static void Main(string[] args)
-        {object perro = new Perro();
-            object gato = new Gato();
-            object pajaro = new Pajaro();
-            ((Perro)perro).perr();
-            ((Gato)gato).gat();
-            ((Pajaro)pajaro).paj();
+        {
+            Perro perro = new Perro();
+            Gato gato = new Gato();
+            Pajaro pajaro = new Pajaro();
+            perro.perr();
+            gato.gat();
+            pajaro.paj();
             Console.ReadKey();
         }
         public class Animal
